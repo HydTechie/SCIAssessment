@@ -46,7 +46,7 @@ public class ProductsController : ControllerBase
     //    return CreatedAtAction(nameof(GetById), new { id = created.ProductID }, created);
     //}
 
-    // Combinations of Repository methods expose as Upsert
+    // Combinations of Repository methods expose as Upsert from Service!
     [HttpPost("{id}")]
     public ActionResult<Product> Upsert(Product product)
     {
